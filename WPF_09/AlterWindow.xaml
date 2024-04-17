@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPF_09.AlterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_09"
+        mc:Ignorable="d"
+        Title="Slider Window" Height="226" Width="500">
+    <Grid>
+        <Slider x:Name="SliderSourse" Value="14" Maximum="80" Minimum="1" TickFrequency="6" TickPlacement="Both" AutoToolTipPlacement="TopLeft" VerticalAlignment="Top" />
+        <TextBlock x:Name="TextBlockTarget" Text="TextBlock" TextAlignment="Center" VerticalAlignment="Center" FontSize="{Binding ElementName=SliderSourse, Path=Value}" Foreground="Red" HorizontalAlignment="Center" />
+    </Grid>
+</Window>
